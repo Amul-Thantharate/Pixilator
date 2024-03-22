@@ -22,3 +22,7 @@ resource "aws_lambda_permission" "Image-Resize-Function-13" {
     source_arn = aws_s3_bucket.s3-bucket-1.arn
 }
 
+resource "aws_cloudwatch_log_group" "Image-Resize-Function-14" {
+    name = "/aws/lambda/${aws_lambda_function.Image-Resize-Function-12.function_name}"
+    retention_in_days = 30
+}
