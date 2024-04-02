@@ -6,7 +6,7 @@ resource "aws_lambda_function" "Image-Resize-Function-12" {
     runtime = "python3.12"
     timeout = 60 # 1 min
     memory_size = 128
-    source_code_hash = filebase64sha256("my-app.zip")
+    source_code_hash = filebase64sha256("../my-app.zip")
     environment {
         variables = {
             processed_bucket =  aws_s3_bucket.s3-bucket-1.id
