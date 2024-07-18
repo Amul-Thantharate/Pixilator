@@ -1,5 +1,15 @@
-variable "s3-bucket-processed" {}
-variable "s3-bucket-source" {}
-variable "region" {}
-variable "account_id" {}
-variable "function_name" {}
+variable "s3-bucket-processed" {
+    default = "pixilator-processed-bucket-12"
+}
+variable "s3-bucket-source" {
+    default = "pixilator-source-bucket-12"
+}
+variable "region" {
+    default = "ap-southeast-1"
+}
+variable "account_id" {
+    default = "058264422820"
+}
+variable "function_name" {
+    default = "pixilator"
+}
