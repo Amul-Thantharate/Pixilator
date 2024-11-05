@@ -5,7 +5,7 @@ variable "s3-bucket-source" {
     default = "pixilator-source-bucket-12"
 }
 variable "region" {
-    default = "ap-southeast-1"
+    default = "ap-south-1"
 }
 variable "account_id" {
     default = "058264422820"
